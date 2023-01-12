@@ -5,6 +5,7 @@ const {
   getAllEvents,
   getOneEvent,
   getAllOrders,
+  checkoutOrder,
 } = require("../../../services/mongoose/participants");
 
 const { StatusCodes } = require("http-status-codes");
@@ -113,4 +114,5 @@ module.exports = {
   getDetailLandingPage,
   getOneEvent,
   getDashboard,
+  checkout,
 };
