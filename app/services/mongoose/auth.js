@@ -21,7 +21,7 @@ const signin = async (req) => {
 
   const token = createJWT({ payload: createTokenUser(result) });
 
-  return token;
+  return { token, role: result.role };
 };
 
 const authenticateParticipant = async (req, res, next) => {
