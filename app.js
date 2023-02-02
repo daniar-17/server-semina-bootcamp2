@@ -47,8 +47,8 @@ app.use(`${v1}/cms`, eventsRouter);
 app.use(`${v1}/cms`, organizersRouter);
 app.use(`${v1}/cms`, authCMSRouter);
 app.use(`${v1}/cms`, ordersRouter);
+app.use(`${v1}/cms`, paymentsRouter);
 app.use(`${v1}`, participantsRouter);
-app.use(`${v1}`, paymentsRouter);
 
 // middlewares
 app.use(notFoundMiddleware);
