@@ -1,7 +1,7 @@
 const { StatusCodes } = require("http-status-codes");
 const {
   getUserRefreshToken,
-} = require("../../../services/mongoose/refreshToken");
+} = require("../../../services/mongoose/userRefreshToken");
 
 const index = async (req, res, next) => {
   try {
